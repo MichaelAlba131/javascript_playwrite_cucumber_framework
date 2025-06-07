@@ -1,0 +1,27 @@
+{
+  "name": "playwright_javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js tests/features/ --require tests/steps/",
+    "test:parallel2": "cucumber-js tests/features/ --require tests/steps/  --parallel 2",
+    "test:parallel3": "cucumber-js tests/features/ --require tests/steps/  --parallel 3",
+    "test:parallel4": "cucumber-js tests/features/ --require tests/steps/  --parallel 4",
+    "test:tag": "cucumber-js tests/features/ --require tests/steps/   --tags '@Login'",
+    "test:playwrightDebug": "PWDEBUG=1 cucumber-js tests/features/ --require tests/steps/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.30",
+    "allure-cucumberjs": "^3.2.2",
+    "multiple-cucumber-html-reporter": "^3.9.2"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16"
+  }
+}
