@@ -7,7 +7,7 @@ setDefaultTimeout(60 * 1000); // Timeout global
 
 // Before hook: abre browser, context, page
 Before(async function () {
-    this.browser = await chromium.launch({ headless: false, slowMo: 100 });
+    this.browser = await chromium.launch({ headless: true, slowMo: 100 });
     this.context = await this.browser.newContext();
     this.page = await this.context.newPage();
 });

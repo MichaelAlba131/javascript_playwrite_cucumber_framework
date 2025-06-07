@@ -24,6 +24,4 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run CucumberJS Tests
-        run: |
-          export PW_HEADLESS=1
-          npm run test:parallel4
+        run: npm run test:parallel4
